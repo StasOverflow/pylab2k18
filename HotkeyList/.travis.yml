@@ -1,8 +1,0 @@
-language: python
-python: 3.6
-install: "pip install Lektor"
-before_script: "cd HotkeyList/"
-script: "lektor build"
-deploy:
-  provider: script
-  script: "lektor deploy ghpages"
