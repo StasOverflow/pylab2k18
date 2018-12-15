@@ -7,5 +7,5 @@ Home task from lecture number 1, a cheatsheet with list of hotkeys for linux,
 git and PyCharm
 
 tips: 
--to install lektor use:
-	curl -sf https://www.getlektor.com/install.sh | sh
+-to setup and run lektor (cms) refer to:
+	https://www.getlektor.com/docs/installation/
