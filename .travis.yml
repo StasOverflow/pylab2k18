@@ -6,3 +6,4 @@ script: "lektor build"
 deploy:
   provider: script
   script: "lektor deploy ghpages"
+  all_branches: true
