@@ -2,5 +2,5 @@
 name = HotkeyList
 
 [servers.ghpages]
-target = ghpages+https://github.com/StasOverflow/pylab2k18/
+target = ghpages+https://StasOverflow/pylab2k18/
 
