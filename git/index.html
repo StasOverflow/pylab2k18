@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Git &middot; HotkeyList </title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<!-- JQuery -->
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+<!-- Bootstrap minified CSS and JS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- Font Awesome -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="../static/css/nix.css?h=d9b967dc">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans|Roboto|Montserrat|Concert+One" rel="stylesheet">
+
+<!-- Google Analytics -->
+
+  </head>
+
+  <body>
+    <header>
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse font-header">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="green-terminal" href=../>@ ~ $</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href=../>/home/</a>
+        </li>
+        
+        
+        <li >
+          <a href="../linux/">~/linux</a>
+        </li>
+        
+        
+        
+        <li >
+          <a href="../pycharm/">~/pycharm</a>
+        </li>
+        
+        
+        
+        <li >
+          <a href="../git/">~/git</a>
+        </li>
+        
+        
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</header>
+    <div class="container wrapper">
+    
+      <h1>Git</h1>
+      <div class="post-content">
+          <p>Listing of basic Git commands, their purpose and examples (we still have to use terminal to enter them)</p>
+<hr>
+<h2>These two are used to tell Git who you are:</h2>
+<ul>
+<li>git config --global user.name "Sam Smith"</li>
+<li>git config --global user.email sam@example.com</li>
+</ul>
+<p>Configure the author name and email address to be used with your commits.
+Note that Git strips some characters (for example trailing periods) from user.name.</p>
+<hr>
+<h2>This one creates a new local repository:</h2>
+<ul>
+<li>git init</li>
+</ul>
+<hr>
+<h2>Check out a repository (get a copy of repo into your computer)</h2>
+<p>Creates a working copy of a local repository:</p>
+<ul>
+<li>git clone /path/to/repository</li>
+</ul>
+<p>Is used for a remote server:</p>
+<ul>
+<li>git clone username@host:/path/to/repository</li>
+</ul>
+<hr>
+<h2>To add files for tracking</h2>
+<ul>
+<li><p>git add <filename></p>
+</li>
+<li><p>git add * (i prefer . instead of asterisk)</p>
+</li>
+</ul>
+<p>Adds one or more files to staging (index)</p>
+<hr>
+<h2>Commit </h2>
+<p>Commit changes to head (but not yet to the remote repository):</p>
+<ul>
+<li>git commit -m "Commit message"</li>
+</ul>
+<p>Commit any files you've added with git add, and also commit any files you've changed since then:</p>
+<ul>
+<li>git commit -a</li>
+</ul>
+<hr>
+<h2>Push</h2>
+<p>Send changes to the master branch of your remote repository:</p>
+<ul>
+<li>git push origin master</li>
+</ul>
+<hr>
+<h2>Status</h2>
+<p>List the files you've changed and those you still need to add or commit:</p>
+<ul>
+<li>git status</li>
+</ul>
+<hr>
+<h2>Connect to a remote repository</h2>
+<p>If you haven't connected your local repository to a remote server, add the server to be able to push to it:</p>
+<ul>
+<li>git remote add origin <server></li>
+</ul>
+<p>List all currently configured remote repositories:</p>
+<ul>
+<li>git remote -v</li>
+</ul>
+<hr>
+<h2>Branches    </h2>
+<p>Create a new branch and switch to it:</p>
+<ul>
+<li>git checkout -b &lt;branchname&gt;</li>
+</ul>
+<p>Switch from one branch to another:</p>
+<ul>
+<li>git checkout &lt;branchname&gt;</li>
+</ul>
+<p>List all the branches in your repo, and also tell you what branch you're currently in:</p>
+<ul>
+<li>git branch</li>
+</ul>
+<p>Delete the feature branch:</p>
+<ul>
+<li>git branch -d &lt;branchname&gt;</li>
+</ul>
+<p>Push the branch to your remote repository, so others can use it:</p>
+<ul>
+<li>git push origin &lt;branchname&gt;</li>
+</ul>
+<p>Push all branches to your remote repository:</p>
+<ul>
+<li>git push --all origin</li>
+</ul>
+<p>Delete a branch on your remote repository:</p>
+<ul>
+<li>git push origin :&lt;branchname&gt;</li>
+</ul>
+<hr>
+<h2>Update from the remote repository   </h2>
+<p>Fetch and merge changes on the remote server to your working directory:</p>
+<ul>
+<li>git pull</li>
+</ul>
+<p>To merge a different branch into your active branch:</p>
+<ul>
+<li>git merge &lt;branchname&gt;</li>
+</ul>
+<p>View all the merge conflicts:</p>
+<ul>
+<li>git diff</li>
+</ul>
+<p>View the conflicts against the base file:</p>
+<ul>
+<li>git diff --base &lt;filename&gt;</li>
+</ul>
+<p>Preview changes, before merging:</p>
+<ul>
+<li>git diff &lt;sourcebranch&gt; &lt;targetbranch&gt;</li>
+</ul>
+<p>After you have manually resolved any conflicts, you mark the changed file:</p>
+<ul>
+<li>git add <filename></li>
+</ul>
+<hr>
+<h2>Tags    </h2>
+<p>You can use tagging to mark a significant changeset, such as a release:</p>
+<ul>
+<li>git tag 1.0.0 &lt;commitID&gt;</li>
+</ul>
+<p>CommitId is the leading characters of the changeset ID, up to 10, but must be unique. Get the ID using:</p>
+<ul>
+<li>git log</li>
+</ul>
+<p>Push all tags to remote repository:</p>
+<ul>
+<li>git push --tags origin</li>
+</ul>
+<hr>
+<h2>Undo local changes  </h2>
+<p>If you mess up, you can replace the changes in your working tree with the last content in head:</p>
+<ul>
+<li>git checkout -- <filename></li>
+</ul>
+<p>Note: Changes already added to the index, as well as new files, will be kept.</p>
+<p>Note2:</p>
+<p>Instead, to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it, do this:</p>
+<p>-git fetch origin</p>
+<ul>
+<li>git reset --hard origin/master</li>
+</ul>
+<hr>
+<h2>Search  </h2>
+<p>Search the working directory for foo():</p>
+<p>-git grep "foo()"</p>
+<hr>
+
+      </div>
+
+    </div>
+    <div class="push"></div>
+    <footer class="footer text-center">
+  <p>Copyright &copy; 2017  -
+    <span class="credit">
+      Powered by
+      <a target="_blank" href="https://www.getlektor.com">Lektor</a>
+      and
+      <a target="_blank" href="https://github.com/rlaverde/lektor-theme-nix/">Nix</a> theme.
+    </span>
+  </p>
+</footer>
+  </body>
+</html>
