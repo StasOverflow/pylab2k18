@@ -1,0 +1,6 @@
+[project]
+name = HotkeyList
+
+[servers.ghpages]
+target = ghpages+https://StasOverflow/pylab2k18/
+
